@@ -1,21 +1,15 @@
-.navbar.is-primary {
-    background-color: white;
+.navbar-toggler {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+    background-repeat: no-repeat;
+    height: 18px;
+    padding: 15px;
+    border: none;
 }
 
-.navbar.is-primary .navbar-start>.navbar-item {
-    color: black;
+.nav-link {
+    font-size: 14px;
 }
 
-.navbar.is-primary .navbar-start>.navbar-item:hover {
-    background-color: black;
-    color: white;
-}
-
-.navbar.is-primary .navbar-end>.navbar-item {
-    color: black;
-}
-
-.navbar.is-primary .navbar-end>a.navbar-item:hover {
-    background-color: black;
-    color: white;
+.marble-logo {
+    height: 50px;
 }

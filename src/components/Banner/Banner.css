@@ -1,14 +1,12 @@
-.hero.is-primary.is-bold {
+.container-fluid {
   background-image: url('https://i.imgur.com/Bog8JBn.png');
-  background-repeat: none;
   background-size: 100%;
   font-family: calibri;
+  height: 300px;
 }
 
-.hero.is-primary .title {
-  color: black;
-}
-
-.hero.is-primary .subtitle {
-  color: black;
+.marble-title {
+  margin-top: 105px;
+  height: 80px;
+  border: solid black 5px;
 }
