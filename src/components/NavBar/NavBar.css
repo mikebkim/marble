@@ -1,0 +1,21 @@
+.navbar.is-primary {
+    background-color: white;
+}
+
+.navbar.is-primary .navbar-start>.navbar-item {
+    color: black;
+}
+
+.navbar.is-primary .navbar-start>.navbar-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.navbar.is-primary .navbar-end>.navbar-item {
+    color: black;
+}
+
+.navbar.is-primary .navbar-end>a.navbar-item:hover {
+    background-color: black;
+    color: white;
+}
