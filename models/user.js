@@ -9,7 +9,11 @@ var userSchema = new Schema({
     name: String,
     email: { type: String, required: true, lowercase: true, unique: true },
     password: String,
-    address: String
+    address: String,
+    address2: String,
+    city: String,
+    states: String,
+    zip: String
 }, {
         timestamps: true
     });
@@ -32,10 +36,7 @@ userSchema.pre('save', function (next) {
 });
 
 userSchema.methods.comparePassword = function (tryPassword, cb) {
-    bcrypt.compare(tryPassword, this.password, function (err, isMatch) {
-        if (err) return cb(err);
-        cb(null, isMatch);
-    });
+    bcrypt.compare(tryPassword, this.password, cb);
 };
 
 module.exports = mongoose.model('User', userSchema);

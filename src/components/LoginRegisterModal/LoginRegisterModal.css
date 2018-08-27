@@ -12,7 +12,6 @@
   }
   
   .LoginRegisterModal-content {
-    display: flex;
     width: 70vw;
     height: 70vh;
     background-color: white;
@@ -26,9 +25,14 @@
     right: -20px;
     height: 25px;
     width: 25px;
+    margin: 5px 5px;
     border-radius: 50%;
     background-color: black;
     color: white;
     line-height: 25px;
     cursor: pointer;
   }
+
+.form-horizontal {
+
+}

@@ -13,6 +13,7 @@ import Contact from './components/Contact/Contact';
 import Cart from './components/Cart/Cart';
 import LoginRegisterModal from './components/LoginRegisterModal/LoginRegisterModal';
 import userService from './utils/userService';
+import MyAccount from './components/MyAccount/MyAccount';
 
 class App extends Component {
   constructor() {
@@ -38,14 +39,14 @@ class App extends Component {
       showLoginModal: false
     });
   }
-
+  
   handleLogin = () => {
     this.setState({
       user: userService.getUser(),
       showLoginModal: false
     });
   }
-
+  
   handleLoginModal = () => {
     this.setState({ showLoginModal: !this.state.showLoginModal });
   }
@@ -77,12 +78,14 @@ class App extends Component {
               show={this.state.showLoginModal} onClose={this.handleLoginModal}
               handleSignup={this.handleSignup}
               handleLogin={this.handleLogin}
+              handleLogout={this.handleLogout}
             />}
             <Switch>
               <Route exact path='/' render={() => <HomePage />} />
               <Route path='/products' render={() => <ProductPage />} />
               <Route path='/contact' render={() => <Contact />} />
               <Route path='/cart' render={({ history }) => <Cart history={history} />} />
+              <Route path='/myaccount' render={({ history }) => <MyAccount history={history} />} />
             </Switch>
           </React.Fragment>
         </Router>

@@ -1,12 +1,21 @@
 import React from 'react';
 import './ProductList.css';
+import Product from '../../components/Product/Product'
 
-const ProductList = () => {
+const ProductList = (props) => {
     return (
-        <div>
-            <h1>Products</h1>
-        </div>
+        <section className="ProductList">
+            <div>
+                <h2>Product List</h2>
+            </div>
+            <div className="ProductList-Products">
+                {props.products.map(p =>
+                    <Product product={p}
+                    />
+                )}
+            </div>
+        </section>
     )
-}
+};
 
 export default ProductList;

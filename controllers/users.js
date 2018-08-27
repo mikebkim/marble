@@ -23,7 +23,6 @@ function login(req, res) {
     });
   }).catch(err => res.status(401).json(err));
 }
-}
 
 /*--- Helper Functions ---*/
 function createJWT(user) {

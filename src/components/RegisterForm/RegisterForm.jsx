@@ -96,7 +96,6 @@ class RegisterForm extends Component {
                     <div className="form-group">
                         <div className="col-sm-12 text-center">
                             <button className="btn btn-default" disabled={this.isFormInvalid()}>Register</button>&nbsp;&nbsp;
-              <Link to='/'>Cancel</Link>
                         </div>
                     </div>
                 </form>

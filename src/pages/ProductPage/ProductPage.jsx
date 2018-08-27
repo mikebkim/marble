@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import productAPI from '../../utils/productAPI';
+import productsAPI from '../../utils/productsAPI';
 import ProductList from '../../components/ProductList/ProductList';
-import { Link } from 'react-router-dom';
 
 class ProductPage extends Component {
     constructor() {
@@ -11,14 +10,14 @@ class ProductPage extends Component {
         }
     }
     componentDidMount() {
-        productAPI.index().then(products =>
+        productsAPI.index().then(products =>
             this.setState({ products })
         );
     }
     render() {
         return (
             <div>
-                <ProductList products={this.props.products} />
+                <ProductList products={this.state.products} />
             </div>
         );
     }

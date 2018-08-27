@@ -23,10 +23,10 @@ class LoginForm extends Component {
     userService.login(this.state)
       .then(() => {
         this.props.handleLogin();
-        this.props.history.push('/');
       })
       // invalid credentials - don't alert in YOUR app :)
-      .catch(err => alert('Invalid Credentials!'));
+      .catch(err => {
+        alert('Invalid Credentials!')});
   }
 
   render() {
@@ -47,7 +47,6 @@ class LoginForm extends Component {
           <div className="form-group">
             <div className="col-sm-12 text-center">
               <button className="btn btn-default">Log In</button>&nbsp;&nbsp;&nbsp;
-              <Link to='/'>Cancel</Link>
             </div>
           </div>
         </form>
