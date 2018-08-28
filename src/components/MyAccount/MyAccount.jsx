@@ -5,6 +5,7 @@ class MyAccount extends React.Component {
     render() {
         return (
             <div className="MyAccount">
+                <h1>My Account</h1>
                 <br></br>
                 <br></br>
                 <h3>{this.props.user.name}</h3>

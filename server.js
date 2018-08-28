@@ -18,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/users', require('./routes/api/users'));
 app.use(require('./config/auth'));
 app.use('/api/products', require('./routes/api/products'))
+app.use('/api/orders', require('./routes/api/orders'))
 
 // catch all
 app.get('/*', function (req, res) {

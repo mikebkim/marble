@@ -6,7 +6,9 @@ const CartItems = (props) => {
         <div className="CartItems">
             { props.cart ?
                 props.cart.items.map(item => <CartItem
+                    key={item.product}
                     item={item}
+                    handleRemoveItem={this.props.handleRemoveItem}
                 />)
                 :
                 <h3>No Items in Cart</h3>

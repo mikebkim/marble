@@ -4,7 +4,9 @@ import Cart from '../../components/Cart/Cart';
 const CartPage = (props) => {
     return (
         <div>
-            <Cart cart={props.cart} />
+            {props.cart &&
+                <Cart cart={props.cart} />
+            }
         </div>
     )
 }

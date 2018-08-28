@@ -15,6 +15,7 @@ import LoginRegisterModal from './components/LoginRegisterModal/LoginRegisterMod
 import userService from './utils/userService';
 import MyAccount from './components/MyAccount/MyAccount';
 import productsAPI from './utils/productsAPI';
+import ordersAPI from './utils/ordersAPI';
 
 class App extends Component {
   constructor() {
@@ -59,18 +60,25 @@ class App extends Component {
     this.setState({ showLoginModal: !this.state.showLoginModal });
   }
 
-  handleAddItem = (product) => {
-    productsAPI.addProduct(product._id)
-    .then(cart => {
-      this.setState({cart});
-    });
+  handleAddItem = (productId) => {
+    productsAPI.addProduct(productId)
+      .then(cart => {
+        this.setState({ cart });
+      });
+  }
+
+  handleRemoveItem = (productId) => {
+    
   }
 
   // lifecycle methods
 
   componentDidMount() {
     let user = userService.getUser();
-    this.setState({ user })
+    this.setState({ user }, function () {
+      ordersAPI.getCart()
+        .then(cart => this.setState({ cart }))
+    });
   }
 
   render() {
@@ -102,7 +110,11 @@ class App extends Component {
                 {...props}
               />} />
               <Route path='/contact' render={() => <Contact />} />
-              <Route path='/cart' render={() => <CartPage cart={this.state.cart} />}
+              <Route path='/cart' render={({ history }) => <CartPage
+                user={this.state.user}
+                cart={this.state.cart}
+                history={history}
+              />}
               />
               <Route path='/myaccount' render={(props) => <MyAccount
                 user={this.state.user}

@@ -22,7 +22,9 @@ orderSchema.methods.addProduct = function(productId, cb) {
     } else {
         order.items.push({product: productId});
     }
-    order.save().then(() => cb(order));
+    order.save().then(() => {
+        order.populate('items.product').execPopulate().then(order => cb(order));
+    });
 }
 
 orderSchema.statics.cartForUser = function(userId, cb) {

@@ -8,8 +8,7 @@ const CartItem = (props) => {
             <p>Description:&nbsp;{props.item.product.description}</p>
             <p>Ingredients:&nbsp;{props.item.product.ingredients}</p>
             <p>Qty:&nbsp;{props.item.quantity}</p>
-            <p><button onClick={() => props.handleRemoveItem(props.item.products)}> - </button></p>
-
+            <p><button onClick={() => props.handleRemoveItem(props.item.product._id)}> - </button></p>
         </div>
     );
 };
