@@ -7,3 +7,7 @@
 .item-qty {
     margin: 0px 10px;
 }
+
+.CartItem {
+    display: flex;
+}

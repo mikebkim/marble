@@ -7,8 +7,7 @@ const ProductModal = (props) => {
         <div className="ProductModal">
             <div className='ProductModal-content'>
                 <div className='ProductModal-close' onClick={props.onClose}>X</div>
-                {props.children}
-                <ProductModalPop />
+                {props.product && <ProductModalPop product={props.product}/>}
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ const Product = (props) => {
         <div className="card">
             <img className="card-img-top" src={props.product.img} alt={props.product.name} ></img>
             <div className="card-body">
-                <Link to="" onClick={props.handleProductModal}>{props.product.name}</Link>
+                <button onClick={() => props.handleProductModal(props.product)}>{props.product.name}</button>
                 <p><strong>Price:</strong>&nbsp;{props.product.price}</p>
                 <p><strong>Description:</strong>&nbsp;{props.product.description}</p>
                 <p><strong>Ingredients:</strong>&nbsp;{props.product.ingredients}</p>

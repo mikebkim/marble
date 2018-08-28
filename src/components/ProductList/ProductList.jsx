@@ -12,6 +12,7 @@ const ProductList = (props) => {
                 {props.products.map(p => <Product
                     product={p} 
                     handleAddItem={props.handleAddItem}
+                    handleProductModal={props.handleProductModal}
                 />)}
             </div>
         </section>

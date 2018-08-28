@@ -25,7 +25,8 @@ class App extends Component {
       user: {},
       showLoginModal: false,
       showProductModal: false,
-      cart: null
+      cart: null,
+      selectedProduct: null
     }
   }
 
@@ -62,8 +63,8 @@ class App extends Component {
     this.setState({ showLoginModal: !this.state.showLoginModal });
   }
 
-  handleProductModal = () => {
-    this.setState({ showProductModal: !this.state.showProductModal });
+  handleProductModal = (product) => {
+    this.setState({ showProductModal:  !this.state.showProductModal, selectedProduct: product});
   }
 
   handleAddItem = (productId) => {
@@ -110,7 +111,8 @@ class App extends Component {
               handleLogout={this.handleLogout}
             />}
             {this.state.showProductModal && <ProductModal
-              show={this.state.showProductModal} onClose={this.handleProductModal}
+              product={this.state.selectedProduct}
+              onClose={this.handleProductModal}
             />}
             <Switch>
               <Route exact path='/' render={() => <HomePage />} />
