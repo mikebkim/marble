@@ -1,17 +1,21 @@
 import React from 'react';
 import './MyAccount.css';
 
-const MyAccount = (props) => {
-    return (
-        <div>
-        {props.user.name}
-        {props.user.address}
-        {props.user.address2}
-        {props.user.city}
-        {props.user.states}
-        {props.user.zip}
-        </div>
-    );
+class MyAccount extends React.Component {
+    render() {
+        return (
+            <div className="MyAccount">
+                <br></br>
+                <br></br>
+                <h3>{this.props.user.name}</h3>
+                <p>{this.props.user.address}</p>
+                <p>{this.props.user.address2}</p>
+                <p>{this.props.user.city}</p>
+                <p>{this.props.user.states}</p>
+                <p>{this.props.user.zip}</p>
+            </div>
+        );
+    }
 }
 
 export default MyAccount;

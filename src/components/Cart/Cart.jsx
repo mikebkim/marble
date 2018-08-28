@@ -1,12 +1,13 @@
 import React from 'react';
-import './Cart.css';
+import CartItems from '../CartItems/CartItems';
 
-const Cart = () => {
+const Cart = (props) => {
     return (
         <div>
             <h1>Cart</h1>
+            <CartItems cart={props.cart} />
         </div>
-    )
+    );
 }
 
 export default Cart;

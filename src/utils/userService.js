@@ -19,9 +19,15 @@ function login(user) {
         .then(token => tokenService.setToken(token));
 }
 
+function update(user) {
+    return userAPI.update(user)
+    .then(user => user)
+}
+
 export default {
     signup,
     getUser,
     logout,
-    login
+    login,
+    update
 }

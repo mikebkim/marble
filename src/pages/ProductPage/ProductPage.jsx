@@ -3,8 +3,8 @@ import productsAPI from '../../utils/productsAPI';
 import ProductList from '../../components/ProductList/ProductList';
 
 class ProductPage extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             products: []
         }
@@ -17,7 +17,10 @@ class ProductPage extends Component {
     render() {
         return (
             <div>
-                <ProductList products={this.state.products} />
+                <ProductList 
+                    handleAddItem={this.props.handleAddItem}
+                    products={this.state.products} 
+                />
             </div>
         );
     }

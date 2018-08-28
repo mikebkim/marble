@@ -10,17 +10,19 @@ import Banner from './components/Banner/Banner';
 import ProductPage from './pages/ProductPage/ProductPage';
 import HomePage from './pages/HomePage/HomePage';
 import Contact from './components/Contact/Contact';
-import Cart from './components/Cart/Cart';
+import CartPage from './pages/CartPage/CartPage';
 import LoginRegisterModal from './components/LoginRegisterModal/LoginRegisterModal';
 import userService from './utils/userService';
 import MyAccount from './components/MyAccount/MyAccount';
+import productsAPI from './utils/productsAPI';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      user: null,
-      showLoginModal: false
+      user: {},
+      showLoginModal: false,
+      cart: null
     }
   }
 
@@ -39,16 +41,29 @@ class App extends Component {
       showLoginModal: false
     });
   }
-  
+
   handleLogin = () => {
     this.setState({
       user: userService.getUser(),
       showLoginModal: false
     });
   }
-  
+
+  handleUpdate = () => {
+    this.setState({
+      user: userService.getUser()
+    });
+  }
+
   handleLoginModal = () => {
     this.setState({ showLoginModal: !this.state.showLoginModal });
+  }
+
+  handleAddItem = (product) => {
+    productsAPI.addProduct(product._id)
+    .then(cart => {
+      this.setState({cart});
+    });
   }
 
   // lifecycle methods
@@ -82,10 +97,18 @@ class App extends Component {
             />}
             <Switch>
               <Route exact path='/' render={() => <HomePage />} />
-              <Route path='/products' render={() => <ProductPage />} />
+              <Route path='/products' render={(props) => <ProductPage
+                handleAddItem={this.handleAddItem}
+                {...props}
+              />} />
               <Route path='/contact' render={() => <Contact />} />
-              <Route path='/cart' render={({ history }) => <Cart history={history} />} />
-              <Route path='/myaccount' render={({ history }) => <MyAccount history={history} />} />
+              <Route path='/cart' render={() => <CartPage cart={this.state.cart} />}
+              />
+              <Route path='/myaccount' render={(props) => <MyAccount
+                user={this.state.user}
+                {...props}
+              />}
+              />
             </Switch>
           </React.Fragment>
         </Router>

@@ -9,13 +9,13 @@ const ProductList = (props) => {
                 <h2>Product List</h2>
             </div>
             <div className="ProductList-Products">
-                {props.products.map(p =>
-                    <Product product={p}
-                    />
-                )}
+                {props.products.map(p => <Product 
+                    product={p} 
+                    handleAddItem={props.handleAddItem}
+                />)}
             </div>
         </section>
-    )
+    );
 };
 
 export default ProductList;
