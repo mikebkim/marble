@@ -12,6 +12,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Contact from './components/Contact/Contact';
 import CartPage from './pages/CartPage/CartPage';
 import LoginRegisterModal from './components/LoginRegisterModal/LoginRegisterModal';
+import ProductModal from './components/ProductModal/ProductModal';
 import userService from './utils/userService';
 import MyAccount from './components/MyAccount/MyAccount';
 import productsAPI from './utils/productsAPI';
@@ -23,6 +24,7 @@ class App extends Component {
     this.state = {
       user: {},
       showLoginModal: false,
+      showProductModal: false,
       cart: null
     }
   }
@@ -60,6 +62,10 @@ class App extends Component {
     this.setState({ showLoginModal: !this.state.showLoginModal });
   }
 
+  handleProductModal = () => {
+    this.setState({ showProductModal: !this.state.showProductModal });
+  }
+
   handleAddItem = (productId) => {
     productsAPI.addProduct(productId)
       .then(cart => {
@@ -68,7 +74,7 @@ class App extends Component {
   }
 
   handleRemoveItem = (productId) => {
-    
+
   }
 
   // lifecycle methods
@@ -103,16 +109,21 @@ class App extends Component {
               handleLogin={this.handleLogin}
               handleLogout={this.handleLogout}
             />}
+            {this.state.showProductModal && <ProductModal
+              show={this.state.showProductModal} onClose={this.handleProductModal}
+            />}
             <Switch>
               <Route exact path='/' render={() => <HomePage />} />
               <Route path='/products' render={(props) => <ProductPage
                 handleAddItem={this.handleAddItem}
+                handleProductModal={this.handleProductModal}
                 {...props}
               />} />
               <Route path='/contact' render={() => <Contact />} />
               <Route path='/cart' render={({ history }) => <CartPage
                 user={this.state.user}
                 cart={this.state.cart}
+                handleAddItem={this.handleAddItem}
                 history={history}
               />}
               />

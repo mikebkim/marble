@@ -1,4 +1,4 @@
-.LoginRegisterModal {
+.ProductModal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     z-index: 100;
   }
   
-  .LoginRegisterModal-content {
+  .ProductModal-content {
     width: 70vw;
     height: 70vh;
     background-color: white;
@@ -19,7 +19,7 @@
     position: relative;
   }
   
-  .LoginRegisterModal-close {
+  .ProductModal-close {
     position: absolute;
     top: -20px;
     right: -20px;

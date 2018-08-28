@@ -5,7 +5,7 @@ const CartPage = (props) => {
     return (
         <div>
             {props.cart &&
-                <Cart cart={props.cart} />
+                <Cart cart={props.cart}/>
             }
         </div>
     )

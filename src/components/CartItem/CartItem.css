@@ -1,0 +1,9 @@
+.cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-qty {
+    margin: 0px 10px;
+}

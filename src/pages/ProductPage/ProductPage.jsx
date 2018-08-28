@@ -19,7 +19,6 @@ class ProductPage extends Component {
             <div>
                 <ProductList 
                     handleAddItem={this.props.handleAddItem}
-                    handleRemoveItem={this.props.handleRemoveItem}
                     products={this.state.products} 
                 />
             </div>
