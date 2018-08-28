@@ -15,16 +15,16 @@ const NavBar = (props) => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent1">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="/products">Products</a>
+                        <Link to="/products" className="nav-link">Products</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/contact">Contact</a>
+                        <Link to="/contact" className="nav-link">Contact</Link>
                     </li>
                     <li className="nav-item">
-                        {props.user ? <a className="nav-link" href="/myaccount">My Account</a> : null }
+                        {props.user ? <Link to="/myaccount" className="nav-link">My Account</Link> : null}
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/cart">Cart</a>
+                        <Link to="/cart" className="nav-link">Cart</Link>
                     </li>
                 </ul>
             </div>

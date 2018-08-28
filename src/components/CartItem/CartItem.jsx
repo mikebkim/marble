@@ -1,14 +1,15 @@
 import React from 'react';
 
 const CartItem = (props) => {
-    return(
+    return (
         <div className="CartItem">
-            <p>
-                This is a cart item
-                <button onClick={() => props.handleRemoveItem(props.item.products)}> - </button>
-                Qty:
-                <span>{props.item.quantity}</span>{props.item.product.name}
-            </p>
+            <p>{props.item.product.name}</p>
+            <p>Price:&nbsp;{props.item.product.price}</p>
+            <p>Description:&nbsp;{props.item.product.description}</p>
+            <p>Ingredients:&nbsp;{props.item.product.ingredients}</p>
+            <p>Qty:&nbsp;{props.item.quantity}</p>
+            <p><button onClick={() => props.handleRemoveItem(props.item.products)}> - </button></p>
+
         </div>
     );
 };
