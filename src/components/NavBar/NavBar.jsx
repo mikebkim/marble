@@ -29,7 +29,7 @@ const NavBar = (props) => {
                     </li>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <li className="nav-item">
-                        {props.user ? <Link to="/cart" className="nav-link">Cart</Link> : null}
+                        {props.user ? <Link to="/cart" className="nav-link"><img src="https://i.imgur.com/0jN4CC9.png" style={{height: 20, width: 20}}></img></Link> : null}
                     </li>
                 </ul>
             </div>
