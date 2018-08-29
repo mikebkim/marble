@@ -2,7 +2,6 @@ import React from 'react';
 import CartItem from '../CartItem/CartItem';
 
 const CartItems = (props) => {
-    // console.log(props.cart.items);
     return (
         <div className="CartItems">
             { props.cart ?
@@ -16,6 +15,9 @@ const CartItems = (props) => {
                 :
                 <h3>No Items in Cart</h3>
             }
+            <h3>Sub Total: </h3>
+            <h3>Tax: </h3>
+            <h3>Total: </h3>
         </div>
     );
 };

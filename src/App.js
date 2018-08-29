@@ -66,7 +66,7 @@ class App extends Component {
 
   handleProductModal = (product) => {
     this.setState({ showProductModal: !this.state.showProductModal, selectedProduct: product });
-  
+
   }
   handleCheckoutModal = (product) => {
     this.setState({ showCheckoutModal: !this.state.showCheckoutModal, selectedProduct: product });
@@ -108,7 +108,6 @@ class App extends Component {
               {...props}
             />)}
           />
-          <Banner />
           {this.state.showLoginModal && <LoginRegisterModal
             show={this.state.showLoginModal} onClose={this.handleLoginModal}
             handleSignup={this.handleSignup}
@@ -123,6 +122,7 @@ class App extends Component {
             product={this.state.selectedProduct}
             onClose={this.handleCheckoutModal}
           />}
+          <Banner />
           <Switch>
             <Route exact path='/' render={() => <HomePage />} />
             <Route path='/products' render={(props) => <ProductPage
