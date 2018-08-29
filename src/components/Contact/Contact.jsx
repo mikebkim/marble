@@ -1,54 +1,32 @@
-import React, { Component } from 'react';
-import ContactField from './components/ContactField/ContactField';
-import ContactButton from './components/ContactButton/ContactButton';
+import React from 'react';
+import './Contact.css';
 
-
-class Form extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-    };
-    this.updateField = this.updateField.bind(this);
-  }
-
-  updateField(field, value) {
-    this.setState({ [field]: value });
-  }
-
-  render() {
+const Contact = () => {
     return (
-      <div>
-        {/* Name field */}
-        <ContactField
-          label="Name"
-          onChange={(event) => this.updateField('name', event.target.value)}
-          value={this.state.name}
-        />
-        {/* Email field */}
-        <ContactField
-          label="Email"
-          onChange={(event) => this.updateField('email', event.target.value)}
-          value={this.state.email}
-        />
-        {/* Message textarea */}
-        <ContactField
-          label="Message"
-          onChange={(event) => this.updateField('message', event.target.value)}
-          /* This should be written like 'textarea' */
-          textarea={true}
-          value={this.state.message}
-        />
-        {/* Submit button */}
-        <ContactButton
-          email="kgadams93@gmail.com"
-          formValues={this.state}
-        />
-      </div>
-    );
-  }
+        <div className="Contact">
+            <h1>Contact</h1>
+            <div className="form-group">
+                <div className="col-sm-12">
+                    <input type="text" className="form-control contact" placeholder="Name" />&nbsp;&nbsp;
+                </div>
+            </div>
+            <div className="form-group">
+                <div className="col-sm-12">
+                    <input type="email" className="form-control contact" placeholder="Email" />&nbsp;&nbsp;
+                    </div>
+            </div>
+            <div className="form-group">
+                <div className="col-sm-12">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>&nbsp;&nbsp;
+                    </div>
+            </div>
+            <div className="form-group">
+                <div className="col-sm-12 text-center">
+                    <button className="btn-default btn">Submit</button>&nbsp;&nbsp;
+                        </div>
+            </div>
+        </div>
+    )
 }
 
-export default Form;
+export default Contact;

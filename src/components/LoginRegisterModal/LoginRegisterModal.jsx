@@ -9,13 +9,8 @@ const LoginRegisterModal = (props) => {
             <div className='LoginRegisterModal-content'>
                 <div className='LoginRegisterModal-close' onClick={props.onClose}>X</div>
                 {props.children}
-                <LoginForm
-                    {...props}
-                />
-                <RegisterForm
-                    {...props}
-                />
-
+                <LoginForm {...props} />
+                <RegisterForm {...props} />
             </div>
         </div>
     );
