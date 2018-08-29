@@ -25,53 +25,53 @@ class Checkout extends Component {
         <form className="form-horizontal" onSubmit={this.handleSubmit} >
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="email" className="form-control" placeholder="Email" value={this.state.email} />
+              <input type="email" className="form-control checkout" placeholder="Email" value={this.state.email} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Name" value={this.state.name} />
+              <input type="text" className="form-control checkout" placeholder="Name" value={this.state.name} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Address" value={this.state.adress} />
+              <input type="text" className="form-control checkout" placeholder="Address" value={this.state.adress} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Address 2" value={this.state.address2} />
+              <input type="text" className="form-control checkout" placeholder="Address 2" value={this.state.address2} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="City" value={this.state.city} />
+              <input type="text" className="form-control checkout" placeholder="City" value={this.state.city} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="State" value={this.state.state} />
+              <input type="text" className="form-control checkout" placeholder="State" value={this.state.state} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Zipcode" value={this.state.zip} />
+              <input type="text" className="form-control checkout" placeholder="Zipcode" value={this.state.zip} />
             </div>
           </div>
           <h3>Billing Information</h3>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Credit Card Number" value={this.state.creditCard} />
+              <input type="text" className="form-control checkout" placeholder="Credit Card Number" value={this.state.creditCard} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Expiration Date" value={this.state.expDate} />
+              <input type="text" className="form-control checkout" placeholder="Expiration Date" value={this.state.expDate} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="CVC" value={this.state.cvc} />
+              <input type="text" className="form-control checkout" placeholder="CVC" value={this.state.cvc} />
             </div>
           </div>
           <div className="form-group">

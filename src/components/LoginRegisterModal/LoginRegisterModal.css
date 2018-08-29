@@ -1,34 +1,34 @@
 .LoginRegisterModal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 100;
-  }
-  
-  .LoginRegisterModal-content {
-    width: 70vw;
-    height: 70vh;
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-  }
-  
-  .LoginRegisterModal-close {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    height: 25px;
-    width: 25px;
-    margin: 5px 5px;
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    line-height: 25px;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.LoginRegisterModal-content {
+  width: 40vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.LoginRegisterModal-close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  height: 25px;
+  width: 25px;
+  margin: 5px 5px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  line-height: 25px;
+  cursor: pointer;
+}
