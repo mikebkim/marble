@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
+import './Checkout.css';
 
 class Checkout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: String,
-      address: String,
-      address2: String,
-      city: String,
-      state: String,
-      zip: Number,
-      creditCard: Number,
+      email: '',
+      address: '',
+      address2: '',
+      city: '',
+      state: '',
+      zip: '',
+      creditCard: '',
       expDate: '',
-      cvc: Number,
+      cvc: '',
       name: ''
     }
   }
 
   render() {
     return (
-      <div>
-        <header className="header-footer">Checkout Information</header>
+      <div className="Checkout">
+        <h3>Shipping Information</h3>
         <form className="form-horizontal" onSubmit={this.handleSubmit} >
           <div className="form-group">
             <div className="col-sm-12">
@@ -57,6 +58,7 @@ class Checkout extends Component {
               <input type="text" className="form-control" placeholder="Zipcode" value={this.state.zip} />
             </div>
           </div>
+          <h3>Billing Information</h3>
           <div className="form-group">
             <div className="col-sm-12">
               <input type="text" className="form-control" placeholder="Credit Card Number" value={this.state.creditCard} />
@@ -74,7 +76,7 @@ class Checkout extends Component {
           </div>
           <div className="form-group">
             <div className="col-sm-12 text-center">
-              <button className="btn btn-success">Checkout</button>&nbsp;&nbsp;&nbsp;
+              <button className="btn btn-success" disabled='true'>Checkout</button>&nbsp;&nbsp;&nbsp;
             </div>
           </div>
         </form>

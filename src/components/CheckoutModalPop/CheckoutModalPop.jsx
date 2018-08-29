@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './ProductModalPop.css';
+import './CheckoutModalPop.css';
 
-class ProductModalPop extends Component {
+class CheckoutModalPop extends Component {
     constructor() {
         super();
         this.state = {
@@ -10,8 +10,9 @@ class ProductModalPop extends Component {
     }
 
     render() {
+        console.log(this.props);
         return (
-            <div className="ProductModalPop">
+            <div className="CheckoutModalPop">
                 <img height="110" width="230" src={this.props.product.img} alt={this.props.product.name} ></img>
                 <p><strong>Name:</strong>&nbsp;{this.props.product.name}</p>
                 <p><strong>Price:</strong>&nbsp;{this.props.product.price}</p>
@@ -22,4 +23,4 @@ class ProductModalPop extends Component {
     }
 };
 
-export default ProductModalPop;
+export default CheckoutModalPop;

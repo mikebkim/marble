@@ -17,9 +17,7 @@
     transition-property: transform;
 }
 
-.navbar-toggler:hover,
-.navbar-toggler:focus,
-.navbar-toggler:active {
+.navbar-toggler:hover, .navbar-toggler:active {
     transform: scale(1.2);
 }
 
@@ -33,16 +31,34 @@
 
 .marble-logo {
     height: 50px;
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
 }
 
-.marble-logo {
-    -webkit-animation:spin 6s linear infinite;
-    -moz-animation:spin 6s linear infinite;
-    animation:spin 6s linear infinite;
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.marble-logo:hover, .marble-logo:active {
+    cursor: pointer;
+    transform: scale(1.2);
+}
 
 .navbar-nav {
     display: flex;

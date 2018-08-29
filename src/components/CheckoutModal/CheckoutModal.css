@@ -1,4 +1,4 @@
-.ProductModal {
+.CheckoutModal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,15 +11,15 @@
     z-index: 100;
   }
   
-  .ProductModal-content {
-    width: 50vw;
-    height: 45vh;
+  .CheckoutModal-content {
+    width: 70vw;
+    height: 70vh;
     background-color: white;
     border-radius: 10px;
     position: relative;
   }
   
-  .ProductModal-close {
+  .CheckoutModal-close {
     position: absolute;
     top: -20px;
     right: -20px;

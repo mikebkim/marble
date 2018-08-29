@@ -7,7 +7,9 @@ const CartPage = (props) => {
     return (
         <div className="CartPage">
             {props.cart &&
-                <Cart cart={props.cart} />
+                <Cart cart={props.cart}
+                    handleCheckoutModal={props.handleCheckoutModal}
+                />
             }
             <Checkout />
         </div>

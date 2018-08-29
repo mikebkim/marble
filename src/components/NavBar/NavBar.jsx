@@ -4,7 +4,7 @@ import './NavBar.css';
 
 const NavBar = (props) => {
     return (
-        <nav className="navbar navbar-light navbar-1 white">
+        <nav className="navbar navbar-fixed-top navbar-light navbar-1 white">
             <a className="navbar-brand" href="/"><img className="marble-logo" src="https://i.imgur.com/uR5VjdD.png" alt="marble-logo" /></a>
 
             <div className="LoginRegisterLink">
