@@ -1,4 +1,5 @@
 var Product = require('./models/product');
+var Order = require('./models/order');
 var products = require('./products');
 require('dotenv').config();
 require('./config/database');

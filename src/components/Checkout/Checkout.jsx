@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Checkout.css';
+import { Link } from 'react-router-dom';
 
 class Checkout extends Component {
   constructor(props) {
@@ -76,7 +77,7 @@ class Checkout extends Component {
           </div>
           <div className="form-group">
             <div className="col-sm-12 text-center">
-              <button className="btn btn-success" disabled='true'>Checkout</button>&nbsp;&nbsp;&nbsp;
+              <button className="btn btn-success">Checkout</button>
             </div>
           </div>
         </form>

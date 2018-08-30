@@ -2,7 +2,6 @@ import React from 'react';
 import './CartItem.css';
 
 const CartItem = (props) => {
-    // console.log(props.product);
     return (
         <div className="card CartItem">
             <img onClick={() => props.handleCheckoutModal(props.product)} className="card-img-top" src={props.item.product.img} alt={props.item.product.name}></img>

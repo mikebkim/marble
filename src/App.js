@@ -18,6 +18,7 @@ import MyAccount from './components/MyAccount/MyAccount';
 import productsAPI from './utils/productsAPI';
 import ordersAPI from './utils/ordersAPI';
 import Footer from './components/Footer/Footer';
+import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 
 class App extends Component {
   constructor() {
@@ -140,6 +141,7 @@ class App extends Component {
               {...props}
             />}
             />
+            <Route path='/checkout' render={(props) => <CheckoutPage />} />
             <Route path='/myaccount' render={(props) => <MyAccount
               user={this.state.user}
               {...props}

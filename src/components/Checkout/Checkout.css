@@ -1,12 +1,17 @@
 .Checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(234, 235, 190, 0.50);
     color: grey;
     padding: 10px 20px 10px 20px;
+    margin-bottom: -13px;
 }
 
 .form-control.checkout {
     display: block;
-    width: 250px;
+    width: 500px;
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;

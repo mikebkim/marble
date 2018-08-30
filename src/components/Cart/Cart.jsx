@@ -4,13 +4,11 @@ import './Cart.css';
 
 const Cart = (props) => {
     return (
-        <div>
+        <div className="Cart">
             <h1>Cart</h1>
-            <div className="Cart">
-                <CartItems cart={props.cart}
-                    handleCheckoutModal={props.handleCheckoutModal}
-                />
-            </div>
+            <CartItems cart={props.cart}
+                handleCheckoutModal={props.handleCheckoutModal}
+            />
         </div>
     );
 }
