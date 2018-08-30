@@ -13,7 +13,7 @@ const NavBar = (props) => {
             </div>
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-                aria-expanded="false" aria-label="Toggle navigation"><span className="dark-blue-text"><i className="fa fa-bars fa-1x"></i></span></button>
+                aria-expanded="false" aria-label="Toggle navigation"></button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent1">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
@@ -29,7 +29,7 @@ const NavBar = (props) => {
                     </li>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <li className="nav-item">
-                        {props.user ? <Link to="/cart" className="nav-link"><img src="https://i.imgur.com/0jN4CC9.png" style={{height: 20, width: 20}}></img></Link> : null}
+                        {props.user ? <Link to="/cart" className="nav-link"><img src="https://i.imgur.com/0jN4CC9.png" alt="cart" style={{ height: 20, width: 20 }}></img></Link> : null}
                     </li>
                 </ul>
             </div>

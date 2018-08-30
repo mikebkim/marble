@@ -11,14 +11,23 @@
 }
 
 .HomePage {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-direction: column;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
 .carousel {
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.TeamImages {
+    display: flex;
 }

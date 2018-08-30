@@ -17,6 +17,7 @@ import userService from './utils/userService';
 import MyAccount from './components/MyAccount/MyAccount';
 import productsAPI from './utils/productsAPI';
 import ordersAPI from './utils/ordersAPI';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   constructor() {
@@ -145,6 +146,7 @@ class App extends Component {
             />}
             />
           </Switch>
+          <Footer />
         </React.Fragment>
       </div>
     );

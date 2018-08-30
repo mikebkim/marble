@@ -8,12 +8,26 @@ const HomePage = () => {
             <p>Marble delivers quality organic grass fed beef right to your door.</p>
             <p>We hand the jerky creation process with love and attention to detail, which in return, provides you with a great tasting product!</p>
             <h1>Marble Team</h1>
-            <div>
-                <img></img>
-                <img></img>
+            <div className="TeamImages">
+                <div>
+                    <h4>Nick</h4>
+                    <p>Co-Founder</p>
+                    <img src="https://imgur.com/VN9joK7.jpeg" alt="co-founder" style={{ height: 250, width: 250 }}></img>
+                </div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div>
+                    <h4>Mike</h4>
+                    <p>Lead Developer</p>
+                    <img src="https://imgur.com/N6RizeO.jpeg" alt="lead developer" style={{ height: 250, width: 250 }}></img>
+                </div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div>
+                    <h4>Cow</h4>
+                    <p>Lead Jerky Producer</p>
+                    <img src="https://imgur.com/SOQlENH.jpeg" alt="cow" style={{ height: 250, width: 250 }}></img>
+                </div>
             </div>
-            <h2>Swag</h2>
-            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+            {/* <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -42,7 +56,7 @@ const HomePage = () => {
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
-            </div>
+            </div> */}
         </div>
     )
 }

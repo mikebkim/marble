@@ -41,12 +41,18 @@
 }
 
 .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
     opacity: 1;
-    -webkit-transform: translateY(5px);
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
+}
+
+.btn-default.btn:hover {
+    opacity: 0.4;
+    color: black;
+    text-decoration: none;
 }

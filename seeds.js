@@ -3,7 +3,7 @@ var products = require('./products');
 require('dotenv').config();
 require('./config/database');
 
-Product.remove({}).then(() => {
+Promise.all([Product.remove({}), Order.remove({})]).then(() => {
     Product.create(products).then(() => {
         process.exit();
     });
