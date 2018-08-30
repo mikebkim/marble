@@ -9,6 +9,7 @@ const CartPage = (props) => {
                 <Cart cart={props.cart}
                     handleCheckoutModal={props.handleCheckoutModal}
                     handleRemoveItem={props.handleRemoveItem}
+                    handleAddItem={props.handleAddItem}
                 />
             }
         </div>

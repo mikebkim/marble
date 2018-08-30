@@ -27,6 +27,19 @@ orderSchema.methods.addProduct = function (productId, cb) {
     });
 }
 
+orderSchema.methods.removeProduct = function (productId, cb) {
+    var order = this;
+    var item = order.items.find(item => item.product.equals(productId));
+    if (item.quantity > 1) {
+        item.quantity -= 1;
+    } else {
+        order.items.remove(item._id);
+    }
+    order.save().then(() => {
+        order.populate('items.product').execPopulate().then(order => cb(order));
+    });
+}
+
 orderSchema.statics.cartForUser = function (userId, cb) {
     // 'this' is the Order model
     this.findOne({ paid: false, user: userId }).populate('items.product')

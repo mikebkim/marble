@@ -7,17 +7,19 @@ const Cart = (props) => {
     let total = props.cart.items.reduce((tot, item) => tot + (item.product.price * item.quantity), 0);
     return (
         <div className="Cart">
-            <h1>Cart</h1>
             <CartItems cart={props.cart}
                 handleCheckoutModal={props.handleCheckoutModal}
                 handleRemoveItem={props.handleRemoveItem}
+                handleAddItem={props.handleAddItem}
             />
-            <h3>Order Summary</h3>
-            <p>Sub Total: ${total}</p>
-            <p>Tax: 7.25%</p>
-            <p>Shipping: FREE</p>
-            <p>Total: ${parseFloat(total + (total * .0725)).toFixed(2)}</p>
-            <Link to="/checkout" className="btn-default btn">Checkout</Link>
+            <div className="OrderSummary">
+                <h3>Order Summary</h3>
+                <p>Sub Total: ${total}</p>
+                <p>Tax: 7.25%</p>
+                <p>Shipping: FREE</p>
+                <p>Total: ${parseFloat(total + (total * .0725)).toFixed(2)}</p>
+                <Link to="/checkout" className="btn-default btn success">Checkout</Link>
+            </div>
         </div>
     );
 }

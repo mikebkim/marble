@@ -13,7 +13,19 @@
 }
 
 .fa {
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.fa-facebook:hover {
+    color: #3C5A96;
+}
+
+.fa-twitter:hover {
+    color: #2AA3F0;
+}
+
+.fa-google-plus:hover {
+    color: #DB4C3F;
 }
 
 a {
@@ -21,8 +33,6 @@ a {
 }
 
 a:hover {
-    opacity: 0.4;
-    color: black;
     text-decoration: none;
 }
 

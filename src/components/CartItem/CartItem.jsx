@@ -9,9 +9,9 @@ const CartItem = (props) => {
                 <p>{props.item.product.name}</p>
                 <p>${props.item.product.price}</p>
                 <div className="cart-btn">
-                    <button className="btn-default btn" onClick={() => props.handleRemoveItem(props.item.product._id)}><strong>-</strong></button>
+                    <button className="btn-default btn remove" onClick={() => props.handleRemoveItem(props.item.product._id)}><strong>-</strong></button>
                     <p className="item-qty">Qty:&nbsp;{props.item.quantity}</p>
-                    <button className="btn-default btn" onClick={() => props.handleAddItem(props.item.product._id)}><strong>+</strong></button>
+                    <button className="btn-default btn add" onClick={() => props.handleAddItem(props.item.product._id)}><strong>+</strong></button>
                 </div>
             </div>
         </div>

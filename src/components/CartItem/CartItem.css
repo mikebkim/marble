@@ -7,3 +7,15 @@
 .item-qty {
     margin: 0px 10px;
 }
+
+.btn-default.btn.remove:hover {
+    background-color: #F0672F;
+    color: white;
+    border: solid #F0672F 2px;
+}
+
+.btn-default.btn.add:hover {
+    background-color: #8EC549;
+    color: white;
+    border: solid #8EC549 2px;
+}

@@ -22,6 +22,16 @@ function addProduct(productId) {
     .then(cart => cart);
 }
 
+function removeProduct(productId) {
+  var options = getAuthRequestOptions('DELETE');
+  return fetch(`${BASE_URL}cart/${productId}`, options)
+    .then(res => {
+      if (res.ok) return res.json();
+      throw new Error('Error adding Product to Cart');
+    })
+    .then(cart => cart);
+}
+
 /*----- Helper Functions -----*/
 
 function getAuthRequestOptions(method) {
@@ -36,5 +46,6 @@ function getAuthRequestOptions(method) {
 
 export default {
   index,
-  addProduct
+  addProduct,
+  removeProduct
 };
