@@ -21,6 +21,7 @@ class ProductPage extends Component {
                     handleAddItem={this.props.handleAddItem}
                     products={this.state.products} 
                     handleProductModal={this.props.handleProductModal}
+                    user={this.props.user}
                 />
             </div>
         );

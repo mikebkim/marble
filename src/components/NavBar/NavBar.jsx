@@ -25,11 +25,11 @@ const NavBar = (props) => {
                     </li>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <li className="nav-item">
-                        {props.user ? <Link to="/myaccount" className="nav-link">My Account</Link> : null}
+                        {props.user ? <Link to="/myaccount" className="nav-link">Account</Link> : null}
                     </li>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <li className="nav-item">
-                        {props.user ? <Link to="/cart" className="nav-link"><img src="https://i.imgur.com/0jN4CC9.png" alt="cart" style={{ height: 20, width: 20 }}></img></Link> : null}
+                        {props.user ? <Link to="/cart" className="nav-link">Cart</Link> : null}
                     </li>
                 </ul>
             </div>

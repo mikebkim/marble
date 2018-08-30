@@ -10,14 +10,12 @@ const Footer = (props) => {
                 <div className="container text-center text-md-left">
                     <div className="row">
                         <div className="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-                            <h5 className="font-weight-bold text-uppercase mb-4">Footer Content</h5>
-                            <p>Here you can use rows and columns here to organize your footer content.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse
-            quasi, veritatis totam voluptas nostrum.</p>
+                            <h5 className="font-weight-bold text-uppercase mb-4">Marble</h5>
+                            <p>Contact us! We're always here to help with any questions you may have.</p>
                         </div>
                         <hr className="clearfix w-100 d-md-none"></hr>
                         <div className="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-                            <h5 className="font-weight-bold text-uppercase mb-4">Marble</h5>
+                            <h5 className="font-weight-bold text-uppercase mb-4">Navigation</h5>
                             <ul className="list-unstyled">
                                 <li>
                                     <p>

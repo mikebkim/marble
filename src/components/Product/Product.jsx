@@ -5,14 +5,14 @@ const Product = (props) => {
     return (
         <div className="card">
             <div className="hvr-float-shadow">
-            <img onClick={() => props.handleProductModal(props.product)} className="card-img-top" src={props.product.img} alt={props.product.name} ></img>
+                <img onClick={() => props.handleProductModal(props.product)} className="card-img-top" src={props.product.img} alt={props.product.name} ></img>
             </div>
             <div className="card-body">
                 <p>{props.product.name}</p>
                 <p>${props.product.price}</p>
-                <button className="btn-default btn" onClick={() => props.handleAddItem(props.product._id)}>Add to Cart</button>
+                {props.user ? <button className="btn-default btn" onClick={() => props.handleAddItem(props.product._id)}>Add to Cart</button> : null}
             </div>
-        </div >
+        </div>
     )
 }
 

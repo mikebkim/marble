@@ -83,7 +83,10 @@ class App extends Component {
   }
 
   handleRemoveItem = (productId) => {
-
+    productsAPI.removeProduct(productId)
+      .then(cart => {
+        this.setState({ cart });
+      });
   }
 
   // lifecycle methods
@@ -91,8 +94,10 @@ class App extends Component {
   componentDidMount() {
     let user = userService.getUser();
     this.setState({ user }, function () {
-      ordersAPI.getCart()
-        .then(cart => this.setState({ cart }))
+      if (user) {
+        ordersAPI.getCart()
+          .then(cart => this.setState({ cart }))
+      }
     });
   }
 
@@ -130,6 +135,7 @@ class App extends Component {
             <Route path='/products' render={(props) => <ProductPage
               handleAddItem={this.handleAddItem}
               handleProductModal={this.handleProductModal}
+              user={this.state.user}
               {...props}
             />} />
             <Route path='/contact' render={() => <Contact />} />
@@ -137,6 +143,7 @@ class App extends Component {
               user={this.state.user}
               cart={this.state.cart}
               handleAddItem={this.handleAddItem}
+              handleRemoveItem={this.handleRemoveItem}
               handleCheckoutModal={this.handleCheckoutModal}
               {...props}
             />}

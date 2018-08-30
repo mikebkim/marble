@@ -10,9 +10,11 @@ const ProductList = (props) => {
             </div>
             <div className="ProductList-Products">
                 {props.products.map(p => <Product
+                    key={p._id}
                     product={p} 
                     handleAddItem={props.handleAddItem}
                     handleProductModal={props.handleProductModal}
+                    user={props.user}
                 />)}
             </div>
         </section>

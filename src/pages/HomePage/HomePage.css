@@ -1,13 +1,6 @@
-.carousel-inner {
-    width: 75%;
-}
-
-.carousel-control-prev-icon {
-    background-image: url('https://i.imgur.com/mr2JBjY.png');
-}
-
-.carousel-control-next-icon {
-    background-image: url('https://i.imgur.com/c0yztMK.png');
+h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .HomePage {
@@ -22,12 +15,27 @@
     margin-bottom: 80px;
 }
 
-.carousel {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
 .TeamImages {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.TeamImage{
+    margin: 0px 30px 30px 40px;
+}
+
+.btn-default.btn {
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+}
+
+.btn-default.btn:hover {
+    border: solid black 2px;
+    background-color: black;
+    color: white;
+    opacity: 1;
 }

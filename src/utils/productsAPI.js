@@ -3,7 +3,7 @@ import tokenService from './tokenService';
 const BASE_URL = '/api/products/';
 
 function index() {
-  return fetch(BASE_URL, getAuthRequestOptions('GET'))
+  return fetch(BASE_URL)
     .then(res => {
       if (res.ok) return res.json();
       throw new Error('Bad credentials');
