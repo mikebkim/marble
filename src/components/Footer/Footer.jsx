@@ -47,8 +47,8 @@ const Footer = (props) => {
                             <ul className="list-unstyled">
                                 <li>
                                     <p>
-                                        <a href="https://www.google.com/maps/place/Santa+Monica,+CA/@34.0219267,-118.5158608,13z/data=!3m1!4b1!4m5!3m4!1s0x80c2a4cec2910019:0xb4170ab5ff23f5ab!8m2!3d34.0194543!4d-118.4911912" target="_blank" rel="noopener noreferrer">
-                                            <i className="fa fa-home mr-3"></i> Santa Moncia, CA 90405, US</a></p>
+                                        <a href="https://www.google.com/maps/place/New+York,+NY/@40.6976701,-74.2598715,10z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728" target="_blank" rel="noopener noreferrer">
+                                            <i className="fa fa-home mr-3"></i> New York, NY 10001, US</a></p>
                                 </li>
                                 <li>
                                     <p>

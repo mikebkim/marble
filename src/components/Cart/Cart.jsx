@@ -14,7 +14,7 @@ const Cart = (props) => {
                 handleAddItem={props.handleAddItem}
             />
             <div className="OrderSummary">
-                <h1>Order Summary</h1>
+                <h2>Order Summary</h2>
                 <br></br>
                 <p>Sub Total: ${total}</p>
                 <p>Tax: 7.25%</p>

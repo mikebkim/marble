@@ -76,7 +76,7 @@ class Checkout extends Component {
           </div>
           <div className="form-group">
             <div className="col-sm-12 text-center">
-              <button className="btn btn-success">Checkout</button>
+              <button className="btn-default btn success">Checkout</button>
             </div>
           </div>
         </form>

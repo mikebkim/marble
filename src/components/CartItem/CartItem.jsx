@@ -4,7 +4,9 @@ import './CartItem.css';
 const CartItem = (props) => {
     return (
         <div className="card CartItem">
-            <img onClick={() => props.handleCheckoutModal(props.product)} className="card-img-top" src={props.item.product.img} alt={props.item.product.name}></img>
+            <div className="hvr-float-shadow">
+                <img onClick={() => props.handleCheckoutModal(props.product)} className="card-img-top" src={props.item.product.img} alt={props.item.product.name}></img>
+            </div>
             <div className="card-body">
                 <p>{props.item.product.name}</p>
                 <p>${props.item.product.price}</p>

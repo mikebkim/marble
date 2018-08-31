@@ -18,7 +18,22 @@ const HomePage = () => {
             <br></br>
             <p>_______________________________________________________</p>
             <h2>Marble Team</h2>
+            <br></br>
             <div className="TeamImages">
+                    <div className="flip-container">
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <h4>Kyle Patterson</h4>
+                        <p>Founder</p>
+                        <div className="flipper">
+                            <div className="front">
+                                <img className="TeamImage" src="https://i.imgur.com/Y002rsa.jpg" alt="co-founder" style={{ height: 250, width: 250 }}></img>
+                            </div>
+                            <div className="back">
+                            </div>
+                        </div>
+                    </div>
                 <div className="flip-container">
                     <br></br>
                     <br></br>
@@ -30,7 +45,6 @@ const HomePage = () => {
                             <img className="TeamImage" src="https://imgur.com/VN9joK7.jpeg" alt="co-founder" style={{ height: 250, width: 250 }}></img>
                         </div>
                         <div className="back">
-                            <p>back of card</p>
                         </div>
                     </div>
                 </div>
@@ -45,7 +59,6 @@ const HomePage = () => {
                             <img className="TeamImage" src="https://imgur.com/N6RizeO.jpeg" alt="lead developer" style={{ height: 250, width: 250 }}></img>
                         </div>
                         <div className="back">
-                            <p>back of card</p>
                         </div>
                     </div>
                 </div>
@@ -60,7 +73,6 @@ const HomePage = () => {
                             <img className="TeamImage" src="https://imgur.com/SOQlENH.jpeg" alt="cow" style={{ height: 250, width: 250 }}></img>
                         </div>
                         <div className="back">
-                            <p>back of card</p>
                         </div>
                     </div>
                 </div>

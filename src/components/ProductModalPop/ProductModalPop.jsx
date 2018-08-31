@@ -13,7 +13,7 @@ class ProductModalPop extends Component {
         return (
             <div className="ProductModalPop">
                 <img height="110" width="230" src={this.props.product.img} alt={this.props.product.name} ></img>
-                <p>{this.props.product.name}</p>
+                <h3>{this.props.product.name}</h3>
                 <p>{this.props.product.description}</p>
                 <p>{this.props.product.ingredients.replace(/,/g, ',  ')}</p>
                 <p>${this.props.product.price}</p>

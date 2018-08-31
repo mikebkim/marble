@@ -1,6 +1,32 @@
+@font-face {
+  font-family: 'beatrice_display_da_regularRg';
+  src: url('beatricedisplayda-regular-webfont.woff2') format('woff2'), url('beatricedisplayda-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vulf_monoregular';
+  src: url('vulfmono-regular-webfont.woff2') format('woff2'), url('vulfmono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vulf_monoitalic';
+  src: url('vulfmono-italic-webfont.woff2') format('woff2'), url('vulfmono-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'beatrice_display_da_regularRg';
+}
+
+h1, h2, h3, h4 {
+  font-family: 'vulf_monoitalic';
+  font-style: italic;
 }
 
 .App header {
