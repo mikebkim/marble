@@ -36,7 +36,6 @@
   line-height: 25px;
   cursor: pointer;
 }
-
 @-webkit-keyframes hvr-back-pulse {
   50% {
     background-color: rgb(255, 72, 72, 0.75);

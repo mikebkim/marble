@@ -1,3 +1,8 @@
+.LoginResigerFlex {
+  display: flex;
+  justify-content: center;
+}
+
 .LoginRegisterModal {
   display: flex;
   justify-content: center;
@@ -12,8 +17,8 @@
 }
 
 .LoginRegisterModal-content {
-  width: 40vw;
-  height: 85vh;
+  width: 30vw;
+  height: 70vh;
   background-color: white;
   border-radius: 10px;
   position: relative;
