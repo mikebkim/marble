@@ -1,6 +1,12 @@
 {
-  "main.css": "static/css/main.16f7ecac.css",
-  "main.css.map": "static/css/main.16f7ecac.css.map",
-  "main.js": "static/js/main.8558b729.js",
-  "main.js.map": "static/js/main.8558b729.js.map"
+  "main.css": "static/css/main.2e03d55c.css",
+  "main.css.map": "static/css/main.2e03d55c.css.map",
+  "main.js": "static/js/main.c856e99e.js",
+  "main.js.map": "static/js/main.c856e99e.js.map",
+  "static/media/beatricedisplayda-regular-webfont.woff": "static/media/beatricedisplayda-regular-webfont.839a26cd.woff",
+  "static/media/beatricedisplayda-regular-webfont.woff2": "static/media/beatricedisplayda-regular-webfont.ddc6eb29.woff2",
+  "static/media/vulfmono-italic-webfont.woff": "static/media/vulfmono-italic-webfont.2811d75d.woff",
+  "static/media/vulfmono-italic-webfont.woff2": "static/media/vulfmono-italic-webfont.a0bcf8cc.woff2",
+  "static/media/vulfmono-regular-webfont.woff": "static/media/vulfmono-regular-webfont.e5d0ccab.woff",
+  "static/media/vulfmono-regular-webfont.woff2": "static/media/vulfmono-regular-webfont.4122daca.woff2"
 }
