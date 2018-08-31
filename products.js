@@ -11,7 +11,7 @@ const products = [
         "name": "Pepper",
         "price": 5,
         "description": "Need a little spice? Pepper is always nice!",
-        "ingredients": ["100% Grass-fed Beef", "Malabar", "Szechuan", "Talamanca Del Caribe"],
+        "ingredients": ["100% Grass-fed Beef", "Himalayan Pink Salt", "Malabar", "Szechuan", "Talamanca Del Caribe"],
         "img": "https://imgur.com/vSyYIKD.png",
         "type": "jerky"
     },
@@ -19,12 +19,12 @@ const products = [
         "name": "Sweet & Spicy",
         "price": 5,
         "description": "Caresses your taste buds then kicks your mouth!",
-        "ingredients": ["100% Grass-fed Beef", "Organic Brown Sugar", "Himalayan Pink Salt", "India Red Chile", "Ají Amarillo", "Garlic"],
+        "ingredients": ["100% Grass-fed Beef", "Himalayan Pink Salt", "Organic Brown Sugar", "India Red Chile", "Ají Amarillo", "Garlic"],
         "img": "https://imgur.com/quME9F8.png",
         "type": "jerky"
     },
     {
-        "name": "Teryaki",
+        "name": "Teriyaki",
         "price": 5,
         "description": "A classic Asian persuasion!",
         "ingredients": ["100% Grass-fed Beef", "Himalayan Pink Salt", "Organic Brown Sugar", "Soy Sauce", "Manuka Honey", "Garlic", "Ginger Root"],

@@ -41,7 +41,6 @@ orderSchema.methods.removeProduct = function (productId, cb) {
 }
 
 orderSchema.statics.cartForUser = function (userId, cb) {
-    // 'this' is the Order model
     this.findOne({ paid: false, user: userId }).populate('items.product')
         .then(order => {
             if (order) return cb(order);

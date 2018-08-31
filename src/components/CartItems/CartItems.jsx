@@ -4,7 +4,6 @@ import CartItem from '../CartItem/CartItem';
 const CartItems = (props) => {
     return (
         <div className="CartItems">
-        <h1>Cart</h1>
             {props.cart ?
                 props.cart.items.map(item =>
                     <CartItem
