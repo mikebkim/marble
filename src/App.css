@@ -1,3 +1,7 @@
+[class*="col-"] {
+  width: 100%;
+}
+
 @font-face {
   font-family: 'beatrice_display_da_regularRg';
   src: url('beatricedisplayda-regular-webfont.woff2') format('woff2'), url('beatricedisplayda-regular-webfont.woff') format('woff');

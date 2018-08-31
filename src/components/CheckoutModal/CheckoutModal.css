@@ -1,3 +1,7 @@
+[class*="col-"] {
+  width: 100%;
+}
+
 .CheckoutModal {
   display: flex;
   justify-content: center;
@@ -20,7 +24,7 @@
   background-image: url('https://i.imgur.com/kv6KIie.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: 260px;
+  background-position-y: 20px;
 }
 
 .CheckoutModal-close {

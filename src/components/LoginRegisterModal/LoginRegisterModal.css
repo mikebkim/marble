@@ -1,3 +1,7 @@
+[class*="col-"] {
+  width: 100%;
+}
+
 .LoginResigerFlex {
   display: flex;
   justify-content: center;
