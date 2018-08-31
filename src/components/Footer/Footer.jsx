@@ -10,7 +10,9 @@ const Footer = (props) => {
                 <div className="container text-center text-md-left">
                     <div className="row">
                         <div className="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-                            <h5 className="font-weight-bold text-uppercase mb-4">Marble</h5>
+                            <img src="https://i.imgur.com/2BrNPaQ.png" alt="marblelogo" style={{ height: 30, width: 200 }}></img>
+                            <br></br>
+                            <br></br>
                             <p>Contact us! We're always here to help with any questions you may have.</p>
                         </div>
                         <hr className="clearfix w-100 d-md-none"></hr>
@@ -45,7 +47,8 @@ const Footer = (props) => {
                             <ul className="list-unstyled">
                                 <li>
                                     <p>
-                                        <i className="fa fa-home mr-3"></i> Santa Moncia, CA 90405, US</p>
+                                        <a href="https://www.google.com/maps/place/Santa+Monica,+CA/@34.0219267,-118.5158608,13z/data=!3m1!4b1!4m5!3m4!1s0x80c2a4cec2910019:0xb4170ab5ff23f5ab!8m2!3d34.0194543!4d-118.4911912" target="_blank" rel="noopener noreferrer">
+                                            <i className="fa fa-home mr-3"></i> Santa Moncia, CA 90405, US</a></p>
                                 </li>
                                 <li>
                                     <p>

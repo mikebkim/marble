@@ -13,7 +13,7 @@
 
 .LoginRegisterModal-content {
   width: 40vw;
-  height: 80vh;
+  height: 85vh;
   background-color: white;
   border-radius: 10px;
   position: relative;
@@ -21,8 +21,8 @@
 
 .LoginRegisterModal-close {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 0px;
+  right: -1px;
   height: 25px;
   width: 25px;
   margin: 5px 5px;
@@ -31,4 +31,45 @@
   color: white;
   line-height: 25px;
   cursor: pointer;
+}
+
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgb(255, 72, 72, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgb(255, 72, 72, 0.75);
+  }
+}
+
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: rgb(255, 72, 72);
+  background-color: rgb(255, 72, 72);
+  color: white;
 }

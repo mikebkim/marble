@@ -7,7 +7,7 @@ const LoginRegisterModal = (props) => {
     return (
         <div className="LoginRegisterModal">
             <div className='LoginRegisterModal-content'>
-                <div className='LoginRegisterModal-close' onClick={props.onClose}>X</div>
+                <div className='LoginRegisterModal-close hvr-back-pulse' onClick={props.onClose}>X</div>
                 {props.children}
                 <LoginForm {...props} />
                 <RegisterForm {...props} />

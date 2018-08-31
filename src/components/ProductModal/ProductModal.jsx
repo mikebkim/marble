@@ -6,7 +6,7 @@ const ProductModal = (props) => {
     return (
         <div className="ProductModal">
             <div className='ProductModal-content'>
-                <div className='ProductModal-close hvr-curl-top-right' onClick={props.onClose}>X</div>
+                <div className='ProductModal-close hvr-back-pulse' onClick={props.onClose}>X</div>
                 {props.product && <ProductModalPop product={props.product}/>}
             </div>
         </div>
