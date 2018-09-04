@@ -10,7 +10,7 @@ const Product = (props) => {
             <div className="card-body">
                 <p>{props.product.name}</p>
                 <p>${props.product.price}</p>
-                {props.user ? <button className="btn-default btn" onClick={() => props.handleAddItem(props.product._id)}>Add to Cart</button> : <p>Please register to add items</p>}
+                {props.user ? <button className="btn-default btn" onClick={() => props.handleAddItem(props.product._id)}>Add to Cart</button> : <button className="btn-default btn" disabled>Please Login/Register</button>}
             </div>
         </div>
     )

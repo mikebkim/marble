@@ -8,7 +8,7 @@ const HomePage = () => {
             <h1>Welcome to Marble!</h1>
             <br></br>
             <p>Marble delivers quality organic grass fed beef right to your door.</p>
-            <p>We hand the jerky creation process with love and attention to detail, which in return, provides you with a great tasting product!</p>
+            <p>We handle the jerky creation process with love and attention to detail, which in return, provides you with a great tasting product!</p>
             <br></br>
             <br></br>
             <br></br>

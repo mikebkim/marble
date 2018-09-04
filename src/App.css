@@ -24,13 +24,12 @@
 }
 
 .App {
+  font-family: 'vulf_monoregular';
   text-align: center;
-  font-family: 'beatrice_display_da_regularRg';
 }
 
 h1, h2, h3, h4 {
-  font-family: 'vulf_monoitalic';
-  font-style: italic;
+  font-family: 'beatrice_display_da_regularRg';
 }
 
 .App header {
