@@ -17,12 +17,12 @@
 * We hand the jerky creation process with love and attention to detail, which in return, provides you with a great tasting product!
 
 ## Technologies Used
-* REACT
+* MongoDB
+* Express
+* React
+* Node
 * HTML
 * CSS - Bootstrap
-* Express
-* Node
-* MongoDB
 * Mongoose
 * MLab
 * GitHub
