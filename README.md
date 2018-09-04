@@ -20,9 +20,12 @@
 * REACT
 * HTML
 * CSS - Bootstrap
+* Express
+* Node
 * MongoDB
 * Mongoose
 * MLab
+* GitHub
 
 ## Getting Started
 [Marble](https://marblejerky.herokuapp.com/)
