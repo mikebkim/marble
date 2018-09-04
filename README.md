@@ -1,22 +1,22 @@
-#Marble
+# Marble
 
-###Home Page
+### Home Page
 ![home page](https://i.imgur.com/B9fNUYd.png)
 
-###Product Page
+### Product Page
 ![product page](https://i.imgur.com/ISTl2W0.png)
 
-###Cart Page
+### Cart Page
 ![cart page](https://i.imgur.com/NymUtJH.png)
 
-###Footer
+### Footer
 ![footer](https://i.imgur.com/JvzZXju.png)
 
-##Our Mission
+## Our Mission
 * Marble delivers quality organic grass fed beef right to your door.
 * We hand the jerky creation process with love and attention to detail, which in return, provides you with a great tasting product!
 
-##Technologies Used
+## Technologies Used
 * REACT
 * HTML
 * CSS - Bootstrap
@@ -24,13 +24,13 @@
 * Mongoose
 * MLab
 
-##Getting Started
+## Getting Started
 [Marble](https://marblejerky.herokuapp.com/)
 
-##Trello
+## Trello
 [Marble Trello Board](https://trello.com/b/RaHci3CJ/marble)
 
-##Next Steps
+## Next Steps
 * Contact Form 
 * Live Customer Service Chat
 * Product Ratings
