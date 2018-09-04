@@ -68,36 +68,9 @@ class RegisterForm extends Component {
                             <input type="password" className="form-control register" placeholder="Confirm Password" value={this.state.passwordConf} onChange={(e) => this.handleChange('passwordConf', e)} />
                         </div>
                     </div>
-                    <div className="register-address">
-                        <div className="form-group">
-                            <div className="col-sm-12">
-                                <input type="text" className="form-control register" placeholder="Address" value={this.state.address} onChange={(e) => this.handleChange('address', e)} />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-sm-12">
-                                <input type="text" className="form-control register" placeholder="Address 2" value={this.state.address2} onChange={(e) => this.handleChange('address2', e)} />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-sm-12">
-                                <input type="text" className="form-control register" placeholder="City" value={this.state.city} onChange={(e) => this.handleChange('city', e)} />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-sm-12">
-                                <input type="text" className="form-control register" placeholder="State" value={this.state.states} onChange={(e) => this.handleChange('states', e)} />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-sm-12">
-                                <input type="text" className="form-control register" placeholder="Zipcode" value={this.state.zip} onChange={(e) => this.handleChange('zip', e)} />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-sm-12 text-center">
-                                <button className="btn btn-default" disabled={this.isFormInvalid()}>Register</button>
-                        </div>
+                    <div className="form-group">
+                        <div className="col-sm-12 text-center">
+                            <button className="btn btn-default" disabled={this.isFormInvalid()}>Register</button>
                         </div>
                     </div>
                 </form>
